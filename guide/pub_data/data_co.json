@@ -1,0 +1,32 @@
+{
+    "매장안내" : [
+        {
+            "menuName": "(공통) > 푸터",
+            "menuLink": "/html/v2/CO/EQL_PC_MA_700.html",
+            "screenName": "Footer",
+            "screenID": "미정",
+            "staff": "양홍열",
+            "current": "완료",
+            "note": "[변경] 고객센터 매장안내 링크 추가<br/>[수정] [250516] 퍼블 수정 (매장 안내 띄어쓰기)"
+        },
+      
+        {
+            "menuName": "(공통) > 푸터 > 고객센터 > 매장안내",
+            "menuLink": "/html/v2/CO/EQL_PC_CS_100100.html",
+            "screenName": "Footer_Help_매장안내",
+            "screenID": "EQL_PC_CS_100100",
+            "staff": "양홍열",
+            "current": "완료",
+            "note": "[신규] 고객센터 > 매장안내 페이지 추가<br/>[수정] [250516] 퍼블 수정 (매장 안내 띄어쓰기)"
+        },
+        {
+            "menuName": "(공통) > 푸터 > 고객센터 > 매장안내 (검색결과없음)",
+            "menuLink": "/html/v2/CO/EQL_PC_CS_100100_no_data.html",
+            "screenName": "Footer_Help_매장안내",
+            "screenID": "EQL_PC_CS_100100",
+            "staff": "양홍열",
+            "current": "완료",
+            "note": "[신규] 고객센터 > 매장안내 페이지 (검색결과없음) 추가<br/>[수정] [250516] 퍼블 수정 (매장 안내 띄어쓰기)"
+        }
+    ]
+}

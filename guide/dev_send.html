@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/base.css" />
+    <title>EQL</title>
+    <style>
+      td.end {
+        background: green;
+        color: #fff;
+      }
+      td.ing {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <header class="header-wrap">
+        <div class="header-inner">
+          <h1 class="toplogo">
+            <a href="#" class="toplogo-link"
+              ><img src="./assets/images/gnb_logo.png" alt="EQL" /><span
+                class="toplogo-text"
+                >PC 고도화 퍼블리싱</span
+              ></a
+            >
+          </h1>
+          <div class="header-main-cols">
+            <nav class="nav-wrap">
+              <ul class="nav-list">
+                <li>
+                  <a
+                    href="index.html"
+                    class="nav-item"
+                    id="publish"
+                    target="_parent"
+                    >PUBLISING LIST</a
+                  >
+                </li>
+                <!-- <li><a href="library_pc.html" class="nav-item" id="share" target="_parent">LIBRARY</a></li> -->
+                <li>
+                  <a
+                    href="source_list.html"
+                    class="nav-item"
+                    id="sourceList"
+                    target="_parent"
+                    >퍼블리소스</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="common_history.html"
+                    class="nav-item"
+                    id="devsend"
+                    target="_parent"
+                    >퍼블공통 작업내역</a
+                  >
+                </li>
+
+                <!-- <li><a href="/guide/preview.html" class="nav-item" id="preview" target="_parent">퍼블형상트리</a></li> -->
+
+                <!-- <li><a href="/guide/components_pc.html" class="nav-item" id="components" target="_parent">COMPONENTS</a></li> -->
+              </ul>
+              <script>
+                const menuitem = document.querySelector("#devsend");
+                if (!!menuitem) {
+                  menuitem.classList.add("active");
+                }
+              </script>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <section class="middle-wrap">
+        <div class="middle-templete">
+          <div class="middle-right-cols">
+            <div class="middle-right-content">
+              <div class="middle-right-title-row">
+                <h3 class="middle-right-title">개발전달내역</h3>
+              </div>
+              <div class="vertical-cont-item-wrap">
+                <!--  -->
+                <div class="vertical-cont-item-wrap">
+                  <!--  -->
+                  <div class="vertical-cont-item">
+                    <div class="vertical-cont-title-wrap">
+                      <p class="vertical-cont-title">
+                        로그인/회원가입 신규 퍼블리싱
+                      </p>
+                      <p class="vct-else">전달 날짜 : 2025-00-00 / 00:00</p>
+                    </div>
+                    <div class="vertical-cont-content">
+                      <div class="codinglist-tb-wrap">
+                        <table class="codinglist-tb">
+                          <thead>
+                            <tr>
+                              <th class="depth" style="width: 150px">구분</th>
+                              <th>퍼블소스</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="depth">
+                                <span>HTML</span>
+                              </td>
+                              <td class="txtleft">
+                                <p class="source-title">변경</p>
+                                <div class="source-wrap">
+                                  /html/v2/EQL_PC_ME_106.html<br />
+                                  /html/v2/EQL_PC_ME_100100.html<br />
+                                  /html/v2/EQL_PC_ME_100200.html<br />
+                                  /html/v2/EQL_PC_ME_100200.html<br />
+                                  /html/v2/EQL_PC_ME_100300.html<br />
+                                  /html/v2/EQL_PC_ME_100400.html<br />
+                                  /html/v2/EQL_PC_ME_100500.html<br />
+                                  /html/v2/EQL_PC_ME_100600.html<br />
+                                  /html/v2/EQL_PC_ME_100700.html<br />
+                                  /html/v2/EQL_PC_ME_100800.html<br />
+                                  /html/v2/EQL_PC_ME_100900.html<br />
+                                  /html/v2/EQL_PC_ME_100900.html<br />
+                                  /html/v2/EQL_PC_ME_101000.html<br />
+                                  /html/v2/EQL_PC_ME_101000_02.html<br />
+                                  /html/v2/EQL_PC_ME_101000_03.html<br />
+                                  /html/v2/EQL_PC_ME_101000.html<br />
+                                  /html/v2/EQL_PC_ME_101100.html<br />
+                                </div>
+                                <!-- <br />
+                                <br />
+                                <p class="source-title">신규</p>
+                                <div class="source-wrap">
+                                  /html/v2/popup_dimmed_L.html<br />
+                                  /html/v2/popup_dimmed_L.html<br />
+                                  /html/v2/popup_dimmed_L.html<br />
+                                </div> -->
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="depth">
+                                <span>CSS</span>
+                              </td>
+                              <td class="txtleft">
+                                <p class="source-title">변경</p>
+                                <div class="source-wrap">
+                                  /resources/css/uiux/member.css
+                                </div>
+                                <!-- <br />
+                                <br />
+                                <p class="source-title">신규</p>
+                                <div class="source-wrap">
+                                  /eql_pc/resources/css/reset.css<br />
+                                  /eql_pc/resources/css/list.css
+                                </div> -->
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="depth">
+                                <span>image</span>
+                              </td>
+                              <td class="txtleft">
+                                <p class="source-title">신규</p>
+                                <div class="source-wrap">
+                                  /eql_pc/resources/image/test.jpg<br />
+                                  /eql_pc/resources/image/test.gif
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- //  -->
+
+                  <!-- 매장안내 -->
+                  <div class="vertical-cont-item">
+                    <div class="vertical-cont-title-wrap">
+                      <p class="vertical-cont-title">매장안내 신규 퍼블리싱</p>
+                      <p class="vct-else">전달 날짜 : 2025-04-31 / 17:00</p>
+                    </div>
+                    <div class="vertical-cont-content">
+                      <div class="codinglist-tb-wrap">
+                        <table class="codinglist-tb">
+                          <thead>
+                            <tr>
+                              <th class="depth" style="width: 150px">구분</th>
+                              <th>퍼블소스</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="depth">
+                                <span>HTML</span>
+                              </td>
+                              <td class="txtleft">
+                                <p class="source-title">
+                                  변경 /* 푸터화면아이디 미정 */
+                                </p>
+                                <div class="source-wrap">
+                                  [PC] <br />
+                                  /html/v2/CO/EQL_PC_MA_700.html<br />
+                                </div>
+                                <br />
+                                <p class="source-title">신규</p>
+                                <div class="source-wrap">
+                                  [PC]<br />
+
+                                  /html/v2/CO/EQL_PC_CS_100100.html<br />
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="depth">
+                                <span>CSS</span>
+                              </td>
+                              <td class="txtleft">
+                                <p class="source-title">
+                                  변경 /* 매장안내 2025-04-28 */
+                                </p>
+                                <div class="source-wrap">
+                                  [PC]<br />
+                                  /resources/css/uiux/etc.css
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- // 매장안내 -->
+
+                  <!-- 이벤트/디스커버 -->
+                  <div class="vertical-cont-item">
+                    <div class="vertical-cont-title-wrap">
+                      <p class="vertical-cont-title">
+                        이벤트/디스커버 변경 퍼블리싱
+                      </p>
+                      <p class="vct-else">전달 날짜 : 2025-00-00 / 00:00</p>
+                    </div>
+                    <div class="vertical-cont-content">
+                      <div class="codinglist-tb-wrap">
+                        <table class="codinglist-tb">
+                          <thead>
+                            <tr>
+                              <th class="depth" style="width: 150px">구분</th>
+                              <th>퍼블소스</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="depth">
+                                <span>HTML</span>
+                              </td>
+                              <td class="txtleft">
+                                <p class="source-title">신규</p>
+                                <div class="source-wrap">
+                                  [PC]<br />
+                                  /html/v2/EV/EQL_PC_DI_100100.html<br />
+                                  /html/v2/EV/EQL_PC_DI_100200.html<br />
+                                  /html/v2/EV/EQL_PC_EV_100100.html<br />
+                                  /html/v2/EV/EQL_PC_EV_100200.html<br />
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="depth">
+                                <span>CSS</span>
+                              </td>
+                              <td class="txtleft">
+                                <p class="source-title">
+                                  변경 /* 전체쿠폰다운로드 2025-04-28 */
+                                </p>
+                                <div class="source-wrap">
+                                  [PC]<br />
+                                  /resources/css/uiux/product.css
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- // 이벤트/디스커버 -->
+                </div>
+                <!-- // -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

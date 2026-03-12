@@ -1,0 +1,416 @@
+{
+    "자사브랜드" : [
+        {
+            "menuName": "BRAND > 브랜드숍 > 자사브랜드",
+            "menuLink": "/html/v2/BR/EQL_PC_BR_100100.html",
+            "screenName": "자사브랜드",
+            "screenID": "EQL_PC_BR_100100",
+            "staff": "한지은",
+            "current": "완료",
+            "note": "[수정]<br />[250514] 퍼블 수정 (확장형 슬라이드 구조 수정)<br /> [250516] 퍼블 수정 (사용사 수동 클릭 없을 경우 자동롤링)<br /> [250526] 퍼블 수정 (컨펌버전시안 이미지/내용/브랜드명추가, 클래스 수정)<br /> [250526] 퍼블 수정 (타이틀 수정)<br /> [250526] 퍼블 수정 (배너 삭제)<br /> [250526-2] 퍼블 수정 (뱃지 삭제)<br /> [250526-2] 퍼블 수정 (뱃지 추가)<br /> [250526-2] 퍼블 수정 (좋아요 추가)<br /> [250526-2] 퍼블 수정 (카테고리,상품정보~색상,토글영역,뱃지 추가)<br /> [250526-2] 퍼블 수정 (브랜드명 적용한 시안내용적용)<br /> [250529] 퍼블 수정 (좋아요 버튼 기존 클래스 추가)<br /> [250604] 퍼블 수정 (sns_share.js 추가)<br /> [250604] 퍼블 수정 (.quick_list 내 공유하기 추가)<br />[250609] 퍼블 수정 (swiper 옵션명 오타 수정)<br />[250610] 퍼블 수정 (필터 LnbDepth4 버튼 추가, .filter_wrap.mt30 클래스 추가)<br />[250610] 퍼블 수정 (카테고리 뎁스 추가)<br />[250619] 퍼블 수정 (운영 브랜드연결 배너 추가)<br />[250707] 퍼블 수정 (.center_type1 에 .own_type 클래스 추가)"
+        },
+        {
+            "menuName": "BRAND > 브랜드숍 > 자사브랜드<br /><br />*로고 타입2",
+            "menuLink": "/html/v2/BR/EQL_PC_BR_100100_logo.html",
+            "screenName": "자사브랜드",
+            "screenID": "EQL_PC_BR_100100",
+            "staff": "한지은",
+            "current": "완료",
+            "note": ""
+        }
+    ],
+
+    "타미힐피거" : [
+        {
+            "menuName": "BRAND > 타미힐피거 > 레이아웃 <br/><br/>*헤더, 푸터,스크롤탑, 카테고리리스트팝업 모음",
+            "menuLink": "/html/v2/BR/tommy_layout.html",
+            "screenName": "레이아웃",
+            "screenID": "tommy_layout",
+            "staff": "양홍열",
+            "current": "완료",
+            "note": ""
+        },
+        {
+            "menuName": "BRAND > 타미힐피거 > 메인",
+            "menuLink": "/html/v2/BR/EQL_PC_BR_100200.html",
+            "screenName": "메인",
+            "screenID": "EQL_PC_BR_100200",
+            "staff": "양홍열",
+            "current": "완료",
+            "note": "*썸네일 비율 변경 예정<br>[250605] head.css임포트, 헤더,푸터, 스크롤탑, 상단띠배너,셀럭스픽, 타임딜, 인스타그램, 베스트리뷰 추가 및 수정<br> [250609] 기획전B tommy issue코너 썸네일에 있던 이퀄버튼 하단으로 변경, 해쉬태그(셀럽스픽),인스타그램 모달 연관상품 이퀄,리뷰버튼 삭제, 상단띠배너 팝업 이퀄버튼 썸네일 내로 이동<br>[250610] 매거진 case : 아티클 + 텍스트/상품,이미지 코너 : 더미이미지 경로 수정<br/> [250616] 상단띠배너 팝업 : 이퀄버튼 삭제<br/>[250820] 타임딜 영역 수정 JS,CSS수정"
+        },
+        {
+            "menuName": "BRAND > 타미힐피거 > 카테고리 리스트(팝업)<br/><br/>*tommy_layout 레이아웃 참고",
+            "menuLink": "/html/v2/BR/tommy_layout.html",
+            "screenName": "카테고리 리스트(팝업)",
+            "screenID": "EQL_PC_BR_100202",
+            "staff": "양홍열",
+            "current": "완료",
+            "note": ""
+        },
+        {
+            "menuName": "BRAND > 타미힐피거 > 브랜드 리스트",
+            "menuLink": "/html/v2/BR/EQL_PC_BR_100203.html",
+            "screenName": "브랜드 리스트",
+            "screenID": "EQL_PC_BR_100203",
+            "staff": "양홍열",
+            "current": "완료",
+            "note": "[250722] 카테고리 탭 추가<br/>[250805] 브랜드리스트 컨텐츠 추가"
+        },
+        {
+            "menuName": "BRAND > 타미힐피거 > 브랜드 리스트(검색결과 없음)",
+            "menuLink": "/html/v2/BR/EQL_PC_BR_100203_nodata.html",
+            "screenName": "브랜드 리스트(검색결과 없음)",
+            "screenID": "EQL_PC_BR_100203_nodata",
+            "staff": "양홍열",
+            "current": "완료",
+            "note": "[250620] 페이지 추가"
+        },
+        {
+            "menuName": "BRAND > 타미힐피거 > 컨텐츠 > 매거진(탭)",
+            "menuLink": "/html/v2/BR/EQL_PC_BR_100204.html",
+            "screenName": "컨텐츠 > 매거진(탭)",
+            "screenID": "EQL_PC_BR_100204",
+            "staff": "양홍열",
+            "current": "완료",
+            "note": ""
+        },
+        {
+            "menuName": "BRAND > 타미힐피거 > 컨텐츠 > 매거진(탭)",
+            "menuLink": "/html/v2/BR/EQL_PC_BR_100204_nodata.html",
+            "screenName": "컨텐츠 > 매거진(탭)(콘텐츠 없음)",
+            "screenID": "EQL_PC_BR_100204_nodata",
+            "staff": "양홍열",
+            "current": "완료",
+            "note": ""
+        },
+        {
+            "menuName": "BRAND > 타미힐피거 > 컨텐츠 > 프로모션(탭)",
+            "menuLink": "/html/v2/BR/EQL_PC_BR_100205.html",
+            "screenName": "컨텐츠 > 프로모션(탭)",
+            "screenID": "EQL_PC_BR_100205",
+            "staff": "양홍열",
+            "current": "완료",
+            "note": ""
+        },
+        {
+            "menuName": "BRAND > 타미힐피거 > 컨텐츠 > 프로모션(탭)",
+            "menuLink": "/html/v2/BR/EQL_PC_BR_100205_nodata.html",
+            "screenName": "컨텐츠 > 프로모션(탭)(콘텐츠 없음)",
+            "screenID": "EQL_PC_BR_100205_nodata",
+            "staff": "양홍열",
+            "current": "완료",
+            "note": ""
+        },
+        {
+            "menuName": "BRAND > 타미힐피거 > 컨텐츠 > 룩북(탭)",
+            "menuLink": "/html/v2/BR/EQL_PC_BR_100206.html",
+            "screenName": "컨텐츠 > 룩북(탭)",
+            "screenID": "EQL_PC_BR_100206",
+            "staff": "양홍열",
+            "current": "완료",
+            "note": ""
+        },
+        {
+            "menuName": "BRAND > 타미힐피거 > 컨텐츠 > 룩북(탭)",
+            "menuLink": "/html/v2/BR/EQL_PC_BR_100206_nodata.html",
+            "screenName": "컨텐츠 > 룩북(탭)(콘텐츠없음)",
+            "screenID": "EQL_PC_BR_100206_nodata",
+            "staff": "양홍열",
+            "current": "완료",
+            "note": "[250807 삭제]"
+        },
+        {
+            "menuName": "BRAND > 타미힐피거 > 해시태그(팝업)",
+            "menuLink": "/html/v2/BR/EQL_PC_BR_100208.html",
+            "screenName": "해시태그(팝업)",
+            "screenID": "EQL_PC_BR_100208",
+            "staff": "양홍열",
+            "current": "완료",
+            "note": "[250609] 이퀄버튼,리뷰버튼 삭제<br/>[250819] 연관상품 스와이퍼 .length > 1 로 수정"
+        },
+        {
+            "menuName": "BRAND > 타미힐피거 > 리뷰플러스(팝업)",
+            "menuLink": "/html/v2/BR/EQL_PC_BR_100209.html",
+            "screenName": "리뷰플러스(팝업)",
+            "screenID": "EQL_PC_BR_100209",
+            "staff": "양홍열",
+            "current": "완료",
+            "note": "-"
+        },
+        {
+            "menuName": "BRAND > 타미힐피거 > 인스타그램(팝업)",
+            "menuLink": "/html/v2/BR/EQL_PC_BR_100210.html",
+            "screenName": "인스타그램(팝업)",
+            "screenID": "EQL_PC_BR_100210",
+            "staff": "양홍열",
+            "current": "완료",
+            "note": "[250609] 이퀄버튼,리뷰버튼 삭제"
+        },
+        {
+            "menuName": "BRAND > 타미힐피거 > 상단띠배너(팝업)",
+            "menuLink": "/html/v2/BR/EQL_PC_BR_100212.html",
+            "screenName": "상단띠배너(팝업)",
+            "screenID": "EQL_PC_BR_100212",
+            "staff": "양홍열",
+            "current": "완료",
+            "note": "[250609] 썸네일 내 이퀄버튼으로 수정<br/> [250616] 이퀄버튼 삭제"
+        },
+        {
+            "menuName": "BRAND > 타미힐피거 > 검색",
+            "menuLink": "/html/v2/BR/EQL_PC_BR_100213.html",
+            "screenName": " 검색",
+            "screenID": "EQL_PC_BR_100213",
+            "staff": "양홍열",
+            "current": "완료",
+            "note": ""
+        },
+        {
+            "menuName": "BRAND > 타미힐피거 > 검색(검색어 없음)",
+            "menuLink": "/html/v2/BR/EQL_PC_BR_100213_no_results.html",
+            "screenName": " 검색(검색어 없음)",
+            "screenID": "EQL_PC_BR_100213_no_results",
+            "staff": "양홍열",
+            "current": "완료",
+            "note": ""
+        },
+        {
+            "menuName": "BRAND > 타미힐피거 > 검색결과 > 프로덕트(탭)",
+            "menuLink": "/html/v2/BR/EQL_PC_BR_100214.html",
+            "screenName": " 검색결과 > 프로덕트(탭)",
+            "screenID": "EQL_PC_BR_100214",
+            "staff": "양홍열",
+            "current": "완료",
+            "note": "[250609] 이퀄버튼만 남기고 삭제<br />[250610] 퍼블 수정 (.badge_auto_list 에 .narrow 클래스 삭제)<br/>[250616] 리뷰버튼 원복"
+        },
+        {
+            "menuName": "BRAND > 타미힐피거 > 검색결과 > 프로덕트(탭)",
+            "menuLink": "/html/v2/BR/EQL_PC_BR_100214_no_results.html",
+            "screenName": " 검색결과 > 프로덕트(탭) > 검색 결과 없음",
+            "screenID": "EQL_PC_BR_100214_no_results",
+            "staff": "양홍열",
+            "current": "완료",
+            "note": "[250609] 이퀄버튼만 남기고 삭제<br />[250610] 퍼블 수정 (.badge_auto_list 에 .narrow 클래스 삭제)<br/>[250616] 리뷰버튼 원복"
+        },
+        {
+            "menuName": "BRAND > 타미힐피거 > 검색결과 > 매거진(탭)",
+            "menuLink": "/html/v2/BR/EQL_PC_BR_100215.html",
+            "screenName": "검색결과 > 매거진(탭)",
+            "screenID": "EQL_PC_BR_100215",
+            "staff": "양홍열",
+            "current": "완료",
+            "note": ""
+        },
+        {
+            "menuName": "BRAND > 타미힐피거 > 검색결과 > 프로모션(탭)",
+            "menuLink": "/html/v2/BR/EQL_PC_BR_100216.html",
+            "screenName": "검색결과 > 프로모션(탭)",
+            "screenID": "EQL_PC_BR_100216",
+            "staff": "양홍열",
+            "current": "완료",
+            "note": "[250610] 퍼블 수정 (.eql_wrap 클래스 삭제)"
+        },
+        {
+            "menuName": "BRAND > 타미힐피거 > 룩북(탭)",
+            "menuLink": "/html/v2/BR/EQL_PC_BR_100217.html",
+            "screenName": " 룩북(탭)",
+            "screenID": "EQL_PC_BR_100217",
+            "staff": "양홍열",
+            "current": "완료",
+            "note": "[250610] 퍼블 수정 (.eql_wrap 클래스 삭제)"
+        },
+        {
+            "menuName": "BRAND > 타미힐피거 > 포토&동영상(팝업)",
+            "menuLink": "/html/v2/BR/EQL_PC_BR_100219.html",
+            "screenName": " 포토&동영상(팝업)",
+            "screenID": "EQL_PC_BR_100219",
+            "staff": "양홍열",
+            "current": "완료",
+            "note": "-"
+        },
+        {
+            "menuName": "BRAND > 타미힐피거 > 신상품 목록",
+            "menuLink": "/html/v2/BR/EQL_PC_BR_100300.html",
+            "screenName": " 신상품 목록",
+            "screenID": "EQL_PC_BR_100300",
+            "staff": "양홍열",
+            "current": "완료",
+            "note": "[250609] 이퀄버튼 하단으로 위치 변경<br/>[250616]리뷰버튼 추가<br/>[250618] div.wrap-product-list 으로 감싸줌<br>[250716] 이퀄버튼만 남기고 삭제"
+        },
+        {
+            "menuName": "BRAND > 타미힐피거 > 베스트 목록",
+            "menuLink": "/html/v2/BR/EQL_PC_BR_100400.html",
+            "screenName": " 베스트 목록",
+            "screenID": "EQL_PC_BR_100400",
+            "staff": "양홍열",
+            "current": "완료",
+            "note": "[250609] 이퀄버튼 하단으로 위치 변경<br/>[250616]리뷰버튼 추가<br/>[250618] 탭 케이스 추가 및 구조 변경<br>[250716] 이퀄버튼만 남기고 삭제"
+        },
+
+        {
+            "menuName": "BRAND > 타미힐피거 > 브랜드소개 상세",
+            "menuLink": "/html/v2/BR/EQL_PC_BR_100600.html",
+            "screenName": " 브랜드소개 상세",
+            "screenID": "EQL_PC_BR_100600",
+            "staff": "양홍열",
+            "current": "완료",
+            "note": ""
+        },
+        {
+            "menuName": "BRAND > 타미힐피거 > 컨텐츠 <br/><br/> *하위 탭 > 매거진(EQL_PC_BR_100204), 프로모션(EQL_PC_BR_100205), 룩북(EQL_PC_BR_100206)",
+            "menuLink": "/html/v2/BR/EQL_PC_BR_100700.html",
+            "screenName": " 컨텐츠",
+            "screenID": "EQL_PC_BR_100700",
+            "staff": "양홍열",
+            "current": "완료",
+            "note": "[250701] 탭 컨텐츠 추가"
+        },
+        {
+            "menuName": "BRAND > 타미힐피거 > 브랜드라인 메인",
+            "menuLink": "/html/v2/BR/EQL_PC_BR_100800.html",
+            "screenName": " 브랜드라인 메인",
+            "screenID": "EQL_PC_BR_100800",
+            "staff": "양홍열",
+            "current": "완료",
+            "note": "[250609] 이퀄버튼만 남기고 삭제<br/>[250616] 리뷰버튼 원복<br/>[250812] div.has-top-line 클래스 추가"
+        },
+        {
+            "menuName": "BRAND > 타미힐피거 > 전체상품",
+            "menuLink": "/html/v2/BR/EQL_PC_BR_100900.html",
+            "screenName": " 전체상품",
+            "screenID": "EQL_PC_BR_100900",
+            "staff": "양홍열",
+            "current": "완료",
+            "note": "[250609] 이퀄버튼만 남기고 삭제<br/>[250616] 리뷰버튼 원복"
+        }
+    ],
+    "타미힐피거 - 메인 코너": [
+    {
+      "menuName": "BRAND > 타미힐피거 > 메인 > 상단 띠배너(코너 1)<br/><br/>*case : 동영상O, 동영상X",
+      "menuLink": "/html/v2/tommy_corner/corner_1_top_banner.html",
+      "screenName": "상단 띠배너(코너 1)",
+      "screenID": "EQL_PC_BR_100200",
+      "staff": "양홍열",
+      "current": "완료",
+      "note": "[250609] 썸네일 내 이퀄버튼으로 수정<br/> [250616] 이퀄버튼 삭제"
+    },
+ 
+    {
+      "menuName": "BRAND > 타미힐피거 > 메인 > 메인 배너(코너 4)",
+      "menuLink": "/html/v2/tommy_corner/corner_4_visual.html",
+      "screenName": "메인 배너(코너 4)",
+      "screenID": "EQL_PC_BR_100200",
+      "staff": "양홍열",
+      "current": "완료",
+      "note": "-"
+    },
+    {
+      "menuName": "BRAND > 타미힐피거 > 메인 > 카테고리 배너(코너 5)<br/><br/>*case : 탭 2개, 1개",
+      "menuLink": "/html/v2/tommy_corner/corner_5_categoryTab.html",
+      "screenName": "카테고리 배너(코너 5)",
+      "screenID": "EQL_PC_BR_100200",
+      "staff": "양홍열",
+      "current": "완료",
+      "note": ""
+    },
+    {
+      "menuName": "BRAND > 타미힐피거 > 메인 > 베스트 상품(코너 6)<br/><br/>*case : 기본, 5개 미만",
+      "menuLink": "/html/v2/tommy_corner/corner_6_best.html",
+      "screenName": "베스트 상품(코너 6)",
+      "screenID": "EQL_PC_BR_100200",
+      "staff": "양홍열",
+      "current": "완료",
+      "note": ""
+    },
+    {
+      "menuName": "BRAND > 타미힐피거 > 메인 > 띠배너(코너 7)",
+      "menuLink": "/html/v2/tommy_corner/corner_7_evt_banner.html",
+      "screenName": "띠배너(코너 7)",
+      "screenID": "EQL_PC_BR_100200",
+      "staff": "양홍열",
+      "current": "완료",
+      "note": "-"
+    },
+    {
+      "menuName": "BRAND > 타미힐피거 > 메인 > 기획전(코너 8-11)<br/><br/>*case : 기획전A, 기획전B",
+      "menuLink": "/html/v2/tommy_corner/corner_8-11_season.html",
+      "screenName": "기획전(코너 8-11)",
+      "screenID": "EQL_PC_BR_100200",
+      "staff": "양홍열",
+      "current": "완료",
+      "note": "[250609] 기획전B tommy issue 썸네일에 있던 이퀄버튼 하단으로 변경"
+    },
+    {
+      "menuName": "BRAND > 타미힐피거 > 메인 > MD's Pick(코너 12)",
+      "menuLink": "/html/v2/tommy_corner/corner_12_mdPick.html",
+      "screenName": "MD's Pick(코너 12)",
+      "screenID": "EQL_PC_BR_100200",
+      "staff": "양홍열",
+      "current": "완료",
+      "note": "-"
+    },
+    {
+      "menuName": "BRAND > 타미힐피거 > 메인 > 매거진(코너 13-16)<br/><br/>*case : 이미지형, 동영상(가로,세로) + 상품형, 아티클 + 텍스트/상품형, 이미지 + 동영상형",
+      "menuLink": "/html/v2/tommy_corner/corner_13-16_magazine.html",
+      "screenName": "매거진(코너 13-16)",
+      "screenID": "EQL_PC_BR_100200",
+      "staff": "양홍열",
+      "current": "완료",
+      "note": "[250610] 매거진 case : 아티클 + 텍스트/상품,이미지 코너 : 더미이미지 경로 수정"
+    },
+    {
+      "menuName": "BRAND > 타미힐피거 > 메인 > 신규 카테고리(코너 17-18)<br/><br/>*case : 카드형, 탭형",
+      "menuLink": "/html/v2/tommy_corner/corner_17-18_category.html",
+      "screenName": "신규 카테고리(코너 17-18)",
+      "screenID": "EQL_PC_BR_100200",
+      "staff": "양홍열",
+      "current": "완료",
+      "note": ""
+    },
+    {
+      "menuName": "BRAND > 타미힐피거 > 메인 > 신상품(코너 19)",
+      "menuLink": "/html/v2/tommy_corner/corner_19_new.html",
+      "screenName": "신상품(코너 19)",
+      "screenID": "EQL_PC_BR_100200",
+      "staff": "양홍열",
+      "current": "완료",
+      "note": "-"
+    },
+    {
+      "menuName": "BRAND > 타미힐피거 > 메인 > 해쉬태그(코너 20)",
+      "menuLink": "/html/v2/tommy_corner/corner_20_hashtag.html",
+      "screenName": "해쉬태그(코너 20)",
+      "screenID": "EQL_PC_BR_100200",
+      "staff": "양홍열",
+      "current": "완료",
+      "note": "[250609] 이퀄버튼,리뷰버튼 삭제"
+    },
+    {
+      "menuName": "BRAND > 타미힐피거 > 메인 > 타임딜(코너 21)",
+      "menuLink": "/html/v2/tommy_corner/corner_21_timeDeal.html",
+      "screenName": "타임딜(코너 21)",
+      "screenID": "EQL_PC_BR_100200",
+      "staff": "양홍열",
+      "current": "완료",
+      "note": "-"
+    },
+    {
+      "menuName": "BRAND > 타미힐피거 > 메인 > 인스타그램(코너 22)",
+      "menuLink": "/html/v2/tommy_corner/corner_22_instagram.html",
+      "screenName": "인스타그램(코너 22)",
+      "screenID": "EQL_PC_BR_100200",
+      "staff": "양홍열",
+      "current": "완료",
+      "note": "[250609] 이퀄버튼,리뷰버튼 삭제"
+    },
+    {
+      "menuName": "BRAND > 타미힐피거 > 메인 > 리뷰플러스(코너 23)",
+      "menuLink": "/html/v2/tommy_corner/corner_23_review.html",
+      "screenName": "리뷰플러스(코너 23)",
+      "screenID": "EQL_PC_BR_100200",
+      "staff": "양홍열",
+      "current": "완료",
+      "note": "-"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "이벤트/디스커버" : [
+      {
+          "menuName": "이벤트 > 이벤트 상세 A타입",
+          "menuLink": "/html/v2/EV/EQL_PC_EV_100100.html",
+          "screenName": "이벤트_상세_A타입_COUPON탭",
+          "screenID": "EQL_PC_EV_100100",
+          "staff": "양홍열",
+          "current": "완료",
+          "note": "[변경] 전체 다운로드 버튼 추가<br/>[250612] 좌측 영역 뱃지 삭제, product.css 수정함(/* [250612] 디자인검수 수정 */)<br/>[250617] 버튼 비활성화 케이스 추가"
+      },
+    
+      {
+          "menuName": "이벤트 > 이벤트 상세 B타입",
+          "menuLink": "/html/v2/EV/EQL_PC_EV_100200.html",
+          "screenName": "이벤트_상세_B타입_COUPON탭",
+          "screenID": "EQL_PC_EV_100200",
+          "staff": "양홍열",
+          "current": "완료",
+          "note": "[변경] 전체 다운로드 버튼 추가<br/> [250612] 탭영역 tab_anchor로 클래스 수정<br/>[250624] div.coupon_all type_b 추가"
+      },
+      {
+        "menuName": "디스커버 > 디스커버 상세 A타입",
+        "menuLink": "/html/v2/EV/EQL_PC_DI_100100.html",
+        "screenName": "디스커버_상세_A타입_COUPON탭",
+        "screenID": "EQL_PC_DI_100100",
+        "staff": "양홍열",
+        "current": "완료",
+        "note": "[변경] 전체 다운로드 버튼 추가<br/>[250612] 좌측 영역 뱃지 삭제<br/>[수정/추가][250616] 알럿 수정 및 추가<br/>[수정][250617] 버튼 비활성화 케이스 추가"
+    },
+
+      {
+        "menuName": "디스커버 > 디스커버 상세 A타입 <br/><br/>*[알럿] 모든 쿠폰을 보유중인 상태에서 전체 다운로드 버튼 클릭 시",
+        "menuLink": "/html/v2/EV/EQL_PC_DI_100100.html?alert_01",
+        "screenName": "디스커버_상세_A타입_COUPON탭",
+        "screenID": "-",
+        "staff": "양홍열",
+        "current": "완료",
+        "note": ""
+    },
+
+    {
+        "menuName": "디스커버 > 디스커버 상세 A타입 <br/><br/>*[알럿] 비로그인 상태로 쿠폰 전체 다운로드 버튼 클릭 시",
+        "menuLink": "/html/v2/EV/EQL_PC_DI_100100.html?alert_02",
+        "screenName": "디스커버_상세_A타입_COUPON탭",
+        "screenID": "-",
+        "staff": "양홍열",
+        "current": "완료",
+        "note": ""
+    },
+  
+    {
+        "menuName": "디스커버 > 디스커버 상세 B타입",
+        "menuLink": "/html/v2/EV/EQL_PC_DI_100200.html",
+        "screenName": "디스커버_상세_B타입_COUPON탭",
+        "screenID": "EQL_PC_DI_100200",
+        "staff": "양홍열",
+        "current": "완료",
+        "note": "[변경] 전체 다운로드 버튼 추가<br/> [250612] 탭영역 tab_anchor로 클래스 수정<br/>[250624] div.coupon_all type_b 추가"
+    }
+  ]
+}

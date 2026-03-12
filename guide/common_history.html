@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/base.css" />
+    <title>EQL</title>
+    <style>
+      td.end {
+        background: green;
+        color: #fff;
+      }
+      td.ing {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <header class="header-wrap">
+        <div class="header-inner">
+          <h1 class="toplogo">
+            <a href="#" class="toplogo-link"
+              ><img src="./assets/images/gnb_logo.png" alt="EQL" /><span
+                class="toplogo-text"
+                >PC 고도화 퍼블리싱</span
+              ></a
+            >
+          </h1>
+          <div class="header-main-cols">
+            <nav class="nav-wrap">
+              <ul class="nav-list">
+                <li>
+                  <a
+                    href="index.html"
+                    class="nav-item"
+                    id="publish"
+                    target="_parent"
+                    >PUBLISING LIST</a
+                  >
+                </li>
+                <!-- <li><a href="library_pc.html" class="nav-item" id="share" target="_parent">LIBRARY</a></li> -->
+                <li>
+                  <a
+                    href="source_list.html"
+                    class="nav-item"
+                    id="sourceList"
+                    target="_parent"
+                    >퍼블리소스</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="common_history.html"
+                    class="nav-item"
+                    id="devsend"
+                    target="_parent"
+                    >퍼블공통 작업내역</a
+                  >
+                </li>
+
+                <!-- <li><a href="/guide/preview.html" class="nav-item" id="preview" target="_parent">퍼블형상트리</a></li> -->
+
+                <!-- <li><a href="/guide/components_pc.html" class="nav-item" id="components" target="_parent">COMPONENTS</a></li> -->
+              </ul>
+              <script>
+                const menuitem = document.querySelector("#devsend");
+                if (!!menuitem) {
+                  menuitem.classList.add("active");
+                }
+              </script>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <section class="middle-wrap">
+        <div class="middle-templete">
+          <div class="middle-right-cols">
+            <div class="middle-right-content">
+              <div class="middle-right-title-row">
+                <h3 class="middle-right-title">퍼블공통작업내역</h3>
+              </div>
+              <div class="vertical-cont-item-wrap">
+                <!--  -->
+                <div class="vertical-cont-item-wrap">
+                  <!--  -->
+                  <div class="vertical-cont-item">
+                    <div class="vertical-cont-title-wrap">
+                      <p class="vertical-cont-title">셀렉트 data-value 연동</p>
+                      <p class="vct-else">작업 날짜 : 2025-04-18</p>
+                    </div>
+                    <div class="vertical-cont-content">
+                      <div class="codinglist-tb-wrap">
+                        <table class="codinglist-tb">
+                          <thead>
+                            <tr>
+                              <th class="depth" style="width: 150px">구분</th>
+                              <th>퍼블소스</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="depth">
+                                <span>JS</span>
+                              </td>
+                              <td class="txtleft">
+                                <p class="source-title">
+                                  콤보박스 콜백밸류 일부 추가
+                                </p>
+                                <div class="source-wrap">
+                                  /resources/js/common.js
+                                </div>
+                                <br />
+                                <p class="source-wrap">
+                                  주석 - /* 2025-04-18 | 콜백추가 */
+                                </p>
+                                <p>
+                                  <a href="/html/v2/comp_select.html"
+                                    >/html/v2/comp_select.html</a
+                                  >
+                                </p>
+                                <!-- <p><a href="/html/mobile/comp_select.html">[mobile]comp_select.html</a></p> -->
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- //  -->
+
+                  <!-- select 컴포넌트 layer 타입 추가 -->
+                  <div class="vertical-cont-item">
+                    <div class="vertical-cont-title-wrap">
+                      <p class="vertical-cont-title">
+                        select 컴포넌트 layer 타입 추가
+                      </p>
+                      <p class="vct-else">작업 날짜 : 2025-04-24</p>
+                    </div>
+                    <div class="vertical-cont-content">
+                      <div class="codinglist-tb-wrap">
+                        <table class="codinglist-tb">
+                          <thead>
+                            <tr>
+                              <th class="depth" style="width: 150px">구분</th>
+                              <th>퍼블소스</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="depth">
+                                <span>HTML,CSS</span>
+                              </td>
+                              <td class="txtleft">
+                                <p class="source-wrap">
+                                  주석 - /* 2025-04-24 | 셀럭트 레이어 타입 추가
+                                  */
+                                </p>
+                                <br />
+                                <p class="source-wrap">
+                                  /resources/css/uiux/form.css
+                                </p>
+                                <p>
+                                  <a href="/html/v2/comp_select.html"
+                                    >/html/v2/comp_select.html</a
+                                  >
+                                </p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- // select 컴포넌트 layer 타입 추가 -->
+
+                  <!-- select 수정 -->
+                  <div class="vertical-cont-item">
+                    <div class="vertical-cont-title-wrap">
+                      <p class="vertical-cont-title">셀렉트 스크립트 수정</p>
+                      <p class="vct-else">작업 날짜 : 2025-04-25</p>
+                    </div>
+                    <div class="vertical-cont-content">
+                      <div class="codinglist-tb-wrap">
+                        <table class="codinglist-tb">
+                          <thead>
+                            <tr>
+                              <th class="depth" style="width: 150px">구분</th>
+                              <th>퍼블소스</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="depth">
+                                <span>JS</span>
+                              </td>
+                              <td class="txtleft">
+                                <p class="source-title">target 및 value 수정</p>
+                                <div class="source-wrap">
+                                  /resources/js/common.js
+                                </div>
+                                <br />
+                                <p>
+                                  <a href="/html/v2/comp_select.html"
+                                    >/html/v2/comp_select.html</a
+                                  >
+                                </p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- // select 수정 -->
+
+                  <!-- 폼 수정 -->
+                  <div class="vertical-cont-item">
+                    <div class="vertical-cont-title-wrap">
+                      <p class="vertical-cont-title">폼 CSS 수정</p>
+                      <p class="vct-else">작업 날짜 : 2025-05-02</p>
+                    </div>
+                    <div class="vertical-cont-content">
+                      <div class="codinglist-tb-wrap">
+                        <table class="codinglist-tb">
+                          <thead>
+                            <tr>
+                              <th class="depth" style="width: 150px">구분</th>
+                              <th>퍼블소스</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="depth">
+                                <span>CSS</span>
+                              </td>
+                              <td class="txtleft">
+                                <p class="source-title">
+                                  .input_clear.show_btn 추가 (input:password /
+                                  input:text 바꾸기 버튼)
+                                </p>
+                                <div class="source-wrap">
+                                  /resources/css/uiux/form.css
+                                </div>
+                                <br />
+                                <p>
+                                  <a href="/html/v2/ME/EQL_PC_ME_100700.html"
+                                    >[PC]EQL_PC_ME_100700.html</a
+                                  >
+                                </p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- // 폼 수정 -->
+
+                  <!-- 버튼 수정 -->
+                  <div class="vertical-cont-item">
+                    <div class="vertical-cont-title-wrap">
+                      <p class="vertical-cont-title">버튼 CSS 수정</p>
+                      <p class="vct-else">작업 날짜 : 2025-05-12</p>
+                    </div>
+                    <div class="vertical-cont-content">
+                      <div class="codinglist-tb-wrap">
+                        <table class="codinglist-tb">
+                          <thead>
+                            <tr>
+                              <th class="depth" style="width: 150px">구분</th>
+                              <th>퍼블소스</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="depth">
+                                <span>CSS</span>
+                              </td>
+                              <td class="txtleft">
+                                <p class="source-title">
+                                  .btn_big_wrap .ico_naver:before 추가
+                                </p>
+                                <p class="source-title">
+                                  .btn_big_wrap.mt40 추가
+                                </p>
+                                <div class="source-wrap">
+                                  /resources/css/uiux/icon_btn_etc.css
+                                </div>
+                                <br />
+                                <p>
+                                  <a href="/html/v2/ME/EQL_PC_ME_100100.html"
+                                    >[PC]EQL_PC_ME_100100.html</a
+                                  >
+                                </p>
+                                <p>
+                                  <a href="/html/v2/ME/EQL_PC_ME_100100.html"
+                                    >[PC]EQL_PC_ME_100300.html</a
+                                  >
+                                </p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- // 버튼 수정 -->
+
+                  <!-- margin 수정 -->
+                  <div class="vertical-cont-item">
+                    <div class="vertical-cont-title-wrap">
+                      <p class="vertical-cont-title">margin CSS 수정</p>
+                      <p class="vct-else">작업 날짜 : 2025-05-12</p>
+                    </div>
+                    <div class="vertical-cont-content">
+                      <div class="codinglist-tb-wrap">
+                        <table class="codinglist-tb">
+                          <thead>
+                            <tr>
+                              <th class="depth" style="width: 150px">구분</th>
+                              <th>퍼블소스</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="depth">
+                                <span>CSS</span>
+                              </td>
+                              <td class="txtleft">
+                                <p class="source-title">
+                                  .mt15, .mt20, .mt40, .mt60 추가 및 수정
+                                </p>
+                                <div class="source-wrap">
+                                  /resources/css/uiux/ui_common.css
+                                </div>
+                                <br />
+                                <p>
+                                  <a href="/html/v2/ME/EQL_PC_ME_100100.html"
+                                    >[PC]EQL_PC_ME_100700.html</a
+                                  >
+                                </p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- // margin 수정 -->
+
+                  <!-- 기존 로그인 페이지 수정 -->
+                  <div class="vertical-cont-item">
+                    <div class="vertical-cont-title-wrap">
+                      <p class="vertical-cont-title">
+                        기존 로그인 페이지 CSS 수정
+                      </p>
+                      <p class="vct-else">작업 날짜 : 2025-05-16</p>
+                    </div>
+                    <div class="vertical-cont-content">
+                      <div class="codinglist-tb-wrap">
+                        <table class="codinglist-tb">
+                          <thead>
+                            <tr>
+                              <th class="depth" style="width: 150px">구분</th>
+                              <th>퍼블소스</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="depth">
+                                <span>CSS</span>
+                              </td>
+                              <td class="txtleft">
+                                <p class="source-title">
+                                  .login_wrap .btn_big_wrap.mt10 추가
+                                </p>
+                                <div class="source-wrap">
+                                  /resources/css/uiux/etc.css
+                                </div>
+                                <br />
+                                <p>
+                                  <a href="/html/v2/ME/EQL_PC_ME_100100.html"
+                                    >[PC]EQL_PC_ME_100100.html</a
+                                  >
+                                </p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- // 기존 로그인 페이지 수정 -->
+
+                  <!-- info_txt 타입 추가 -->
+                  <div class="vertical-cont-item">
+                    <div class="vertical-cont-title-wrap">
+                      <p class="vertical-cont-title">장바구니 관련 CSS 추가</p>
+                      <p class="vct-else">작업 날짜 : 2025-06-04</p>
+                    </div>
+                    <div class="vertical-cont-content">
+                      <div class="codinglist-tb-wrap">
+                        <table class="codinglist-tb">
+                          <thead>
+                            <tr>
+                              <th class="depth" style="width: 150px">구분</th>
+                              <th>퍼블소스</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="depth">
+                                <span>CSS</span>
+                              </td>
+                              <td class="txtleft">
+                                <p class="source-title">
+                                  .order_left .buy_detail .cart_pack_wrap
+                                  .info_txt 추가
+                                </p>
+                                <div class="source-wrap">
+                                  /resources/css/uiux/mycart.css
+                                </div>
+                                <br />
+                                <p>
+                                  <a href="/html/v2/OR/EQL_PC_OR_100100.html"
+                                    >[PC]EQL_PC_ME_100100.html</a
+                                  >
+                                  <a href="/html/v2/OR/EQL_PC_ME_100400.html"
+                                    >[PC]EQL_PC_ME_100400.html</a
+                                  >
+                                </p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- // info_txt 타입 추가 -->
+
+                  <!-- info_area 타입 추가 -->
+                  <div class="vertical-cont-item">
+                    <div class="vertical-cont-title-wrap">
+                      <p class="vertical-cont-title">상품상세 관련 CSS 추가</p>
+                      <p class="vct-else">작업 날짜 : 2025-06-23</p>
+                    </div>
+                    <div class="vertical-cont-content">
+                      <div class="codinglist-tb-wrap">
+                        <table class="codinglist-tb">
+                          <thead>
+                            <tr>
+                              <th class="depth" style="width: 150px">구분</th>
+                              <th>퍼블소스</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="depth">
+                                <span>CSS</span>
+                              </td>
+                              <td class="txtleft">
+                                <p class="source-title">
+                                  .info_area.type_flex, .txt.txt_black 추가
+                                </p>
+                                <div class="source-wrap">
+                                  /resources/css/uiux/product.css
+                                </div>
+                                <br />
+                                <p>
+                                  <a href="/html/v2/PR/EQL_PC_PR_100100.html"
+                                    >[PC]EQL_PC_PR_100100.html</a
+                                  >
+                                </p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- // info_area 타입 추가 -->
+
+                  <!-- ico_txt 타입 추가 -->
+                  <div class="vertical-cont-item">
+                    <div class="vertical-cont-title-wrap">
+                      <p class="vertical-cont-title">상품상세 관련 CSS 추가</p>
+                      <p class="vct-else">작업 날짜 : 2025-07-03</p>
+                    </div>
+                    <div class="vertical-cont-content">
+                      <div class="codinglist-tb-wrap">
+                        <table class="codinglist-tb">
+                          <thead>
+                            <tr>
+                              <th class="depth" style="width: 150px">구분</th>
+                              <th>퍼블소스</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="depth">
+                                <span>CSS</span>
+                              </td>
+                              <td class="txtleft">
+                                <p class="source-title">
+                                  .icon_cont .ico_tit.ico_none 타입 추가
+                                </p>
+                                <div class="source-wrap">
+                                  /resources/css/uiux/ui_common.css
+                                </div>
+                                <br />
+                                <p>
+                                  <a
+                                    href="/html/v2/ME/EQL_PC_ME_101000.html?agreePopupHpoint"
+                                    >[PC]EQL_PC_ME_101000.html?agreePopupHpoint</a
+                                  >
+                                </p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- // ico_txt 타입 추가 -->
+
+                  <!-- .section_block 타입 추가 -->
+                  <div class="vertical-cont-item">
+                    <div class="vertical-cont-title-wrap">
+                      <p class="vertical-cont-title">반품신청 관련 CSS 추가</p>
+                      <p class="vct-else">작업 날짜 : 2025-08-14</p>
+                    </div>
+                    <div class="vertical-cont-content">
+                      <div class="codinglist-tb-wrap">
+                        <table class="codinglist-tb">
+                          <thead>
+                            <tr>
+                              <th class="depth" style="width: 150px">구분</th>
+                              <th>퍼블소스</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="depth">
+                                <span>CSS</span>
+                              </td>
+                              <td class="txtleft">
+                                <p class="source-title">
+                                  .section_block .section_gift_bag 타입 추가
+                                </p>
+                                <div class="source-wrap">
+                                  /resources/css/uiux/ui_common.css
+                                </div>
+                                <br />
+                                <p>
+                                  <a href="/html/v2/MY/EQL_PC_MY_101000.html"
+                                    >[PC]EQL_PC_MY_101000.html</a
+                                  >
+                                </p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- // section_block 타입 추가 -->
+                </div>
+                <!-- // -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
