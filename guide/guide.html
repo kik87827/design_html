@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>컴포넌트 가이드</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        color: #222;
+        background: #f4f6f8;
+        line-height: 1.5;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      button,
+      input,
+      select,
+      textarea {
+        font: inherit;
+      }
+
+      .wrap {
+        display: flex;
+        min-height: 100vh;
+      }
+
+      .side {
+        width: 260px;
+        padding: 24px 20px;
+        background: #fff;
+        border-right: 1px solid #e5e7eb;
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        overflow: auto;
+      }
+
+      .logo {
+        margin: 0 0 24px;
+        font-size: 24px;
+        font-weight: 700;
+      }
+
+      .group + .group {
+        margin-top: 24px;
+      }
+
+      .gtitle {
+        margin: 0 0 10px;
+        font-size: 13px;
+        font-weight: 700;
+        color: #666;
+        text-transform: uppercase;
+      }
+
+      .menu {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .menu li + li {
+        margin-top: 8px;
+      }
+
+      .menu a {
+        display: block;
+        padding: 10px 12px;
+        border-radius: 10px;
+        color: #333;
+      }
+
+      .menu a:hover,
+      .menu a.on {
+        background: #eef4ff;
+        color: #2563eb;
+        font-weight: 700;
+      }
+
+      .content {
+        flex: 1;
+        min-width: 0;
+        padding: 40px;
+      }
+
+      .hero {
+        margin-bottom: 32px;
+        padding: 32px;
+        border-radius: 20px;
+        background: #111827;
+        color: #fff;
+      }
+
+      .hero h2 {
+        margin: 0 0 12px;
+        font-size: 32px;
+      }
+
+      .hero p {
+        margin: 0;
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      .section + .section {
+        margin-top: 40px;
+      }
+
+      .stitle {
+        margin: 0 0 16px;
+        font-size: 24px;
+        font-weight: 700;
+      }
+
+      .card {
+        background: #fff;
+        border: 1px solid #e5e7eb;
+        border-radius: 18px;
+        padding: 24px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+      }
+
+      .card + .card {
+        margin-top: 16px;
+      }
+
+      .ctitle {
+        margin: 0 0 8px;
+        font-size: 18px;
+        font-weight: 700;
+      }
+
+      .desc {
+        margin: 0 0 16px;
+        color: #666;
+        font-size: 14px;
+      }
+
+      .preview {
+        padding: 20px;
+        border-radius: 14px;
+        background: #f9fafb;
+        border: 1px solid #e5e7eb;
+      }
+
+      .code {
+        margin-top: 16px;
+        border-radius: 14px;
+        overflow: hidden;
+        background: #0f172a;
+        color: #e2e8f0;
+      }
+
+      .code pre {
+        margin: 0;
+        padding: 18px;
+        overflow: auto;
+        font-size: 14px;
+        line-height: 1.6;
+      }
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 100px;
+        height: 44px;
+        padding: 0 16px;
+        border: 1px solid transparent;
+        border-radius: 12px;
+        background: #2563eb;
+        color: #fff;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        background: #1d4ed8;
+      }
+
+      .btn.sub {
+        background: #fff;
+        color: #222;
+        border-color: #d1d5db;
+      }
+
+      .btn.sub:hover {
+        background: #f3f4f6;
+      }
+
+      .field {
+        max-width: 360px;
+      }
+
+      .label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .input {
+        width: 100%;
+        height: 44px;
+        padding: 0 14px;
+        border: 1px solid #cbd5e1;
+        border-radius: 12px;
+        background: #fff;
+      }
+
+      .input:focus {
+        outline: none;
+        border-color: #2563eb;
+        box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+      }
+
+      .list {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .item {
+        padding: 20px;
+        border: 1px solid #e5e7eb;
+        border-radius: 16px;
+        background: #fff;
+      }
+
+      .item strong {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 16px;
+      }
+
+      .item p {
+        margin: 0;
+        color: #666;
+        font-size: 14px;
+      }
+
+      @media (max-width: 1024px) {
+        .wrap {
+          display: block;
+        }
+
+        .side {
+          width: 100%;
+          height: auto;
+          position: static;
+          border-right: 0;
+          border-bottom: 1px solid #e5e7eb;
+        }
+
+        .content {
+          padding: 24px 20px 40px;
+        }
+
+        .list {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 768px) {
+        .hero {
+          padding: 24px;
+        }
+
+        .hero h2 {
+          font-size: 26px;
+        }
+
+        .list {
+          grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <aside class="side">
+        <h1 class="logo">Guide</h1>
+
+        <div class="group">
+          <p class="gtitle">Foundation</p>
+          <ul class="menu">
+            <li><a href="#intro" class="on">소개</a></li>
+            <li><a href="#color">컬러</a></li>
+            <li><a href="#typo">타이포</a></li>
+          </ul>
+        </div>
+
+        <div class="group">
+          <p class="gtitle">Component</p>
+          <ul class="menu">
+            <li><a href="#button">버튼</a></li>
+            <li><a href="#input">입력폼</a></li>
+            <li><a href="#card">카드</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <main class="content">
+        <section class="hero" id="intro">
+          <h2>컴포넌트 가이드</h2>
+          <p>
+            프로젝트에서 공통으로 사용하는 UI 패턴과 마크업 기준을 정리한 샘플
+            페이지입니다.
+          </p>
+        </section>
+
+        <section class="section" id="button">
+          <h3 class="stitle">Button</h3>
+
+          <div class="card">
+            <h4 class="ctitle">기본 버튼</h4>
+            <p class="desc">주요 액션과 보조 액션에 사용하는 버튼입니다.</p>
+
+            <div class="preview">
+              <div class="row">
+                <button type="button" class="btn">Primary</button>
+                <button type="button" class="btn sub">Secondary</button>
+              </div>
+            </div>
+
+            <div class="code">
+              <pre><code>&lt;button type="button" class="btn"&gt;Primary&lt;/button&gt;
+&lt;button type="button" class="btn sub"&gt;Secondary&lt;/button&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="input">
+          <h3 class="stitle">Input</h3>
+
+          <div class="card">
+            <h4 class="ctitle">텍스트 입력</h4>
+            <p class="desc">폼 영역에서 공통으로 사용하는 인풋 샘플입니다.</p>
+
+            <div class="preview">
+              <div class="field">
+                <label for="name" class="label">이름</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="input"
+                  placeholder="이름을 입력하세요"
+                />
+              </div>
+            </div>
+
+            <div class="code">
+              <pre><code>&lt;div class="field"&gt;
+  &lt;label for="name" class="label"&gt;이름&lt;/label&gt;
+  &lt;input
+    type="text"
+    id="name"
+    class="input"
+    placeholder="이름을 입력하세요"
+  /&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="card">
+          <h3 class="stitle">Card</h3>
+
+          <div class="card">
+            <h4 class="ctitle">정보 카드</h4>
+            <p class="desc">목록형 UI에서 재사용 가능한 카드 예시입니다.</p>
+
+            <div class="preview">
+              <div class="list">
+                <div class="item">
+                  <strong>카드 제목 1</strong>
+                  <p>카드에 들어가는 설명 텍스트 예시입니다.</p>
+                </div>
+                <div class="item">
+                  <strong>카드 제목 2</strong>
+                  <p>간단한 소개 문구나 상태값을 넣을 수 있습니다.</p>
+                </div>
+                <div class="item">
+                  <strong>카드 제목 3</strong>
+                  <p>리스트형 콘텐츠를 정리할 때 사용합니다.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="code">
+              <pre><code>&lt;div class="item"&gt;
+  &lt;strong&gt;카드 제목&lt;/strong&gt;
+  &lt;p&gt;카드에 들어가는 설명 텍스트입니다.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
