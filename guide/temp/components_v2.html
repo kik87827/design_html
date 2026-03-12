@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/base.css" />
+  <title>EQL</title>
+</head>
+
+<body>
+  <div id="app">
+    <header class="header-wrap">
+      <div class="header-inner">
+        <h1 class="toplogo">
+          <a href="#" class="toplogo-link"><span class="toplogo-img">Sample Project</span><span class="toplogo-text">고도화
+              퍼블리싱</span></a>
+        </h1>
+        <div class="header-main-cols">
+          <nav class="nav-wrap">
+            <ul class="nav-list">
+              <li>
+                <a href="index.html" class="nav-item" id="publish" target="_parent">PUBLISING LIST</a>
+              </li>
+              <!-- <li><a href="library_pc.html" class="nav-item" id="share" target="_parent">LIBRARY</a></li> -->
+              <li>
+                <a href="source_list.html" class="nav-item" id="sourceList" target="_parent">퍼블리소스</a>
+              </li>
+              <li>
+                <a href="common_history.html" class="nav-item" id="devsend" target="_parent">퍼블공통
+                  작업내역</a>
+              </li>
+
+              <!-- <li><a href="/guide/preview.html" class="nav-item" id="preview" target="_parent">퍼블형상트리</a></li> -->
+
+              <li><a href="/guide/components.html" class="nav-item" id="components" target="_parent">COMPONENTS</a></li>
+            </ul>
+            <script>
+              const menuitem = document.querySelector("#components");
+              if (!!menuitem) {
+                menuitem.classList.add("active");
+              }
+            </script>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="middle-wrap">
+      <div class="middle-templete">
+        <div class="middle-right-cols">
+          <div class="middle-right-content">
+            <div class="middle-right-title-row">
+              <h3 class="middle-right-title">컴포넌트 가이드</h3>
+            </div>
+            <div class="comp_wrap">
+              <div class="comp_item">
+                <h4>Button</h4>
+
+                <div class="preview">
+                  <button class="btn">Primary</button>
+                  <button class="btn sub">Secondary</button>
+                </div>
+
+                <div class="code">
+                  <pre></pre>
+                </div>
+              </div>
+
+              <div class="comp_item">
+                <h4>Input</h4>
+
+                <div class="preview">
+                  <input class="input" placeholder="텍스트 입력" />
+                </div>
+
+                <div class="code">
+                  <pre></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+    function escapeHtml(str) {
+      return str
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;");
+    }
+
+    document.querySelectorAll(".comp_item").forEach((comp) => {
+      const preview = comp.querySelector(".preview");
+      const code = comp.querySelector(".code pre");
+
+      if (!preview || !code) return;
+
+      const html = preview.innerHTML
+        .replace(/^\n+|\n+$/g, "")
+        .replace(/^\s+/gm, "");
+
+      code.innerHTML = escapeHtml(html);
+    });
+  </script>
+</body>
+
+</html>

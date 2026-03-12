@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Component Guide</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: #f4f6f8;
+      color: #222;
+    }
+
+    .wrap {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+    }
+
+    .comp {
+      margin-bottom: 40px;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      background: #fff;
+      padding: 20px;
+    }
+
+    .preview {
+      padding: 20px;
+      background: #f9fafb;
+      border-radius: 12px;
+      border: 1px solid #e5e7eb;
+    }
+
+    .code {
+      margin-top: 16px;
+      background: #0f172a;
+      color: #e2e8f0;
+      border-radius: 12px;
+      overflow: auto;
+    }
+
+    .code pre {
+      margin: 0;
+      padding: 16px;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      padding: 0 16px;
+      border-radius: 10px;
+      border: 0;
+      background: #2563eb;
+      color: #fff;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .btn.sub {
+      background: #e5e7eb;
+      color: #222;
+    }
+
+    .input {
+      height: 40px;
+      padding: 0 12px;
+      border: 1px solid #cbd5e1;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <h1>컴포넌트 가이드 샘플</h1>
+
+    <div class="comp">
+      <h2>Button</h2>
+
+      <div class="preview">
+        <button class="btn">Primary</button>
+        <button class="btn sub">Secondary</button>
+      </div>
+
+      <div class="code">
+        <pre></pre>
+      </div>
+    </div>
+
+    <div class="comp">
+      <h2>Input</h2>
+
+      <div class="preview">
+        <input class="input" placeholder="텍스트 입력" />
+      </div>
+
+      <div class="code">
+        <pre></pre>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function escapeHtml(str) {
+      return str
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;");
+    }
+
+    document.querySelectorAll(".comp").forEach((comp) => {
+      const preview = comp.querySelector(".preview");
+      const code = comp.querySelector(".code pre");
+
+      if (!preview || !code) return;
+
+      const html = preview.innerHTML
+        .replace(/^\n+|\n+$/g, "")
+        .replace(/^\s+/gm, "");
+
+      code.innerHTML = escapeHtml(html);
+    });
+  </script>
+</body>
+
+</html>
