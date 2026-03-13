@@ -1,78 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/base.css" />
+    <title>프로젝트명</title>
+    <style>
+      td.semi_end {
+        background: rgba(0, 128, 0, 0.1);
+        color: #000;
+      }
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" type="text/css" href="./assets/css/base.css" />
-  <title>EQL</title>
-  <style>
-    td.semi_end {
-      background: rgba(0, 128, 0, 0.1);
-      color: #000;
-    }
+      td.end {
+        background: green;
+        color: #fff;
+      }
 
-    td.end {
-      background: green;
-      color: #fff;
-    }
+      td.ing {
+        color: blue;
+      }
+    </style>
+  </head>
 
-    td.ing {
-      color: blue;
-    }
-  </style>
-</head>
+  <body>
+    <div id="app">
+      <header class="header-wrap">
+        <div class="header-inner">
+          <h1 class="toplogo">
+            <a href="#" class="toplogo-link"><span class="toplogo-img">Sample Project</span><span class="toplogo-text">고도화 퍼블리싱</span></a>
+          </h1>
+          <div class="header-main-cols">
+            <nav class="nav-wrap">
+              <ul class="nav-list">
+                <li>
+                  <a href="index.html" class="nav-item" id="publish" target="_parent">PUBLISING LIST</a>
+                </li>
+                <!-- <li><a href="library_pc.html" class="nav-item" id="share" target="_parent">LIBRARY</a></li> -->
+                <li>
+                  <a href="source_list.html" class="nav-item" id="sourceList" target="_parent">퍼블리소스</a>
+                </li>
+                <li>
+                  <a href="common_history.html" class="nav-item" id="devsend" target="_parent">퍼블공통 작업내역</a>
+                </li>
 
-<body>
-  <div id="app">
-    <header class="header-wrap">
-      <div class="header-inner">
-        <h1 class="toplogo">
-          <a href="#" class="toplogo-link"><span class="toplogo-img">Sample Project</span><span class="toplogo-text">고도화
-              퍼블리싱</span></a>
-        </h1>
-        <div class="header-main-cols">
-          <nav class="nav-wrap">
-            <ul class="nav-list">
-              <li>
-                <a href="index.html" class="nav-item" id="publish" target="_parent">PUBLISING LIST</a>
-              </li>
-              <!-- <li><a href="library_pc.html" class="nav-item" id="share" target="_parent">LIBRARY</a></li> -->
-              <li>
-                <a href="source_list.html" class="nav-item" id="sourceList" target="_parent">퍼블리소스</a>
-              </li>
-              <li>
-                <a href="common_history.html" class="nav-item" id="devsend" target="_parent">퍼블공통 작업내역</a>
-              </li>
+                <!-- <li><a href="/guide/preview.html" class="nav-item" id="preview" target="_parent">퍼블형상트리</a></li> -->
 
-              <!-- <li><a href="/guide/preview.html" class="nav-item" id="preview" target="_parent">퍼블형상트리</a></li> -->
-
-              <li><a href="/guide/components.html" class="nav-item" id="components" target="_parent">COMPONENTS</a></li>
-            </ul>
-            <script>
-              const menuitem = document.querySelector("#publish");
-              if (!!menuitem) {
-                menuitem.classList.add("active");
-              }
-            </script>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <section class="middle-wrap">
-      <div class="middle-templete">
-        <div class="middle-left-cols">
-          <div class="middle-left-item">
-            <div class="left-block">
-              <div class="middle-left-title-wrap">
-                <h2 class="middle-left-title">PC</h2>
-              </div>
-              <ul class="middle-menu-list"></ul>
-            </div>
+                <li>
+                  <a href="/guide/components.html" class="nav-item" id="components" target="_parent">COMPONENTS</a>
+                </li>
+              </ul>
+              <script>
+                const menuitem = document.querySelector('#publish');
+                if (!!menuitem) {
+                  menuitem.classList.add('active');
+                }
+              </script>
+            </nav>
           </div>
         </div>
-        <div class="middle-right-cols">
-          <div class="middle-right-content">
-            <!-- <div class="middle-right-title-row">
+      </header>
+      <section class="middle-wrap">
+        <div class="middle-templete">
+          <div class="middle-left-cols">
+            <div class="middle-left-item">
+              <div class="left-block">
+                <div class="middle-left-title-wrap">
+                  <h2 class="middle-left-title">PC</h2>
+                </div>
+                <ul class="middle-menu-list"></ul>
+              </div>
+            </div>
+          </div>
+          <div class="middle-right-cols">
+            <div class="middle-right-content">
+              <!-- <div class="middle-right-title-row">
                     <h3 class="middle-right-title">전체 현황</h3>
                     <div class="middle-right-title-count-wrap">
                       <p class="middle-right-title-count">
@@ -82,43 +82,35 @@
                       </p>
                     </div>
                   </div> -->
-            <div class="vertical-cont-item-wrap"></div>
+              <div class="vertical-cont-item-wrap"></div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <script type="module">
-      const set_location = "./pub_data/";
-      const set_category = [
-        set_location + "/data_co.json",
-        set_location + "/data_pr.json",
-        set_location + "/data_br.json",
-        set_location + "/data_ev.json",
-        set_location + "/data_me.json",
-        set_location + "/data_or.json",
-        set_location + "/data_my.json",
-      ];
-      document.addEventListener("DOMContentLoaded", async function () {
-        await pageDraw();
-        pageHandler();
-        currentCheck();
-      });
-      async function pageDraw() {
-        const vcitemWrap = document.querySelector(".vertical-cont-item-wrap");
-        const middleMenuList = document.querySelector(".middle-menu-list");
-        for (const [index, citem] of set_category.entries()) {
-          try {
-            const response = await fetch(citem);
-            const citem_data = await response.json();
-            // 각 카테고리 데이터를 처리하여 메뉴 리스트와 콘텐츠를 채우기
-            for (const category in citem_data) {
-              // 카테고리에 해당하는 메뉴를 middleMenuList에 추가
-              console.log(category);
-              middleMenuList.innerHTML += `
+      </section>
+      <script type="module">
+        const set_location = './pub_data/';
+        const set_category = [set_location + '/data_co.json', set_location + '/data_pr.json', set_location + '/data_br.json', set_location + '/data_ev.json', set_location + '/data_me.json', set_location + '/data_or.json', set_location + '/data_my.json'];
+        document.addEventListener('DOMContentLoaded', async function () {
+          await pageDraw();
+          pageHandler();
+          currentCheck();
+        });
+        async function pageDraw() {
+          const vcitemWrap = document.querySelector('.vertical-cont-item-wrap');
+          const middleMenuList = document.querySelector('.middle-menu-list');
+          for (const [index, citem] of set_category.entries()) {
+            try {
+              const response = await fetch(citem);
+              const citem_data = await response.json();
+              // 각 카테고리 데이터를 처리하여 메뉴 리스트와 콘텐츠를 채우기
+              for (const category in citem_data) {
+                // 카테고리에 해당하는 메뉴를 middleMenuList에 추가
+                console.log(category);
+                middleMenuList.innerHTML += `
                         <li><a href="javascript:;" class="middle-menu">${category}</a></li>
                       `;
-              // 카테고리 내부의 데이터를 테이블로 출력
-              vcitemWrap.innerHTML += `
+                // 카테고리 내부의 데이터를 테이블로 출력
+                vcitemWrap.innerHTML += `
                         <div class="vertical-cont-item">
                           <div class="vertical-cont-title-wrap">
                             <p class="vertical-cont-title">${category}</p>
@@ -144,111 +136,98 @@
                                 </thead>
                                 <tbody>
                                   ${citem_data[category]
-                  .map(
-                    (item, index) => `
+                                    .map(
+                                      (item, index) => `
                                       <tr>
                                         <td class="num">${index + 1}</td>
                                         <td class="depth txtleft">
-                                          <a href="${item.menuLink
-                      }" target="_blank" class="screen-link">
+                                          <a href="${item.menuLink}" target="_blank" class="screen-link">
                                             ${item.menuName}
                                           </a>
                                         </td>
                                         <td class="screen-id">
-                                          <a href="${item.menuLink
-                      }" target="_blank" class="screen-link">
+                                          <a href="${item.menuLink}" target="_blank" class="screen-link">
                                             ${item.screenID}
                                           </a>
                                         </td>
                                          <td class="screen-id">
-                                          <a href="${item.menuLink
-                      }" target="_blank" class="screen-link">
+                                          <a href="${item.menuLink}" target="_blank" class="screen-link">
                                             ${item.screenName}
                                           </a>
                                         </td>
                                         <td class="worker">${item.staff}</td>
-                                        <td class="work ${caseAction(
-                        item.current
-                      )}">${item.current}</td>
-                                        <td class="else txtleft">${item.note
-                      }</td>
-                                      </tr>`
-                  )
-                  .join("")}
+                                        <td class="work ${caseAction(item.current)}">${item.current}</td>
+                                        <td class="else txtleft">${item.note}</td>
+                                      </tr>`,
+                                    )
+                                    .join('')}
                                 </tbody>
                               </table>
                             </div>
                           </div>
                         </div>
                       `;
+              }
+            } catch (error) {
+              console.error(`데이터 불러오기 실패 (${citem})`, error);
             }
-          } catch (error) {
-            console.error(`데이터 불러오기 실패 (${citem})`, error);
+          }
+          function caseAction(current) {
+            if (current === '진행중') {
+              return 'ing';
+            } else if (current === '설계완료') {
+              return 'semi_end';
+            } else if (current === '완료') {
+              return 'end';
+            } else if (current === '대기중') {
+              return 'wait';
+            } else {
+              return '';
+            }
           }
         }
-        function caseAction(current) {
-          if (current === "진행중") {
-            return "ing";
-          } else if (current === "설계완료") {
-            return "semi_end";
-          } else if (current === "완료") {
-            return "end";
-          } else if (current === "대기중") {
-            return "wait";
-          } else {
-            return "";
-          }
-        }
-      }
-      function pageHandler() {
-        const middleMenu = document.querySelectorAll(".middle-menu");
-        const verticalContItem = Array.from(
-          document.querySelectorAll(".vertical-cont-item")
-        );
-        let activeMenu = null;
-        middleMenu.forEach((item, menuIndex) => {
-          item.addEventListener("click", (e) => {
-            e.preventDefault();
-            const etarget = e.currentTarget;
-            if (activeMenu && etarget !== activeMenu) {
-              activeMenu.classList.remove("active");
-            }
-            etarget.classList.toggle("active");
-            verticalContItem.forEach((item, contIndex) => {
-              if (!etarget.classList.contains("active")) {
-                item.classList.remove("none");
-                return;
+        function pageHandler() {
+          const middleMenu = document.querySelectorAll('.middle-menu');
+          const verticalContItem = Array.from(document.querySelectorAll('.vertical-cont-item'));
+          let activeMenu = null;
+          middleMenu.forEach((item, menuIndex) => {
+            item.addEventListener('click', (e) => {
+              e.preventDefault();
+              const etarget = e.currentTarget;
+              if (activeMenu && etarget !== activeMenu) {
+                activeMenu.classList.remove('active');
               }
-              if (menuIndex !== contIndex) {
-                item.classList.add("none");
-              } else {
-                item.classList.remove("none");
-              }
+              etarget.classList.toggle('active');
+              verticalContItem.forEach((item, contIndex) => {
+                if (!etarget.classList.contains('active')) {
+                  item.classList.remove('none');
+                  return;
+                }
+                if (menuIndex !== contIndex) {
+                  item.classList.add('none');
+                } else {
+                  item.classList.remove('none');
+                }
+              });
+              activeMenu = etarget;
             });
-            activeMenu = etarget;
           });
-        });
-      }
-      function currentCheck() {
-        const verticalContItem = Array.from(
-          document.querySelectorAll(".vertical-cont-item")
-        );
-        verticalContItem.forEach((vci) => {
-          const currentCount = vci.querySelector(".current-count");
-          const totalCount = vci.querySelector(".total-count");
-          const currentCountPer = vci.querySelector(".current-count-per");
-          const ctr = vci.querySelectorAll(".codinglist-tb tbody tr");
-          const tdEnd = vci.querySelectorAll(".codinglist-tb td.end");
-          const tdIng = vci.querySelectorAll(".codinglist-tb td.ing");
-          currentCount.textContent = `${tdEnd.length}`;
-          totalCount.textContent = `${ctr.length}`;
-          currentCountPer.textContent = `${Math.floor(
-            (tdEnd.length / ctr.length) * 100
-          )}`;
-        });
-      }
-    </script>
-  </div>
-</body>
-
+        }
+        function currentCheck() {
+          const verticalContItem = Array.from(document.querySelectorAll('.vertical-cont-item'));
+          verticalContItem.forEach((vci) => {
+            const currentCount = vci.querySelector('.current-count');
+            const totalCount = vci.querySelector('.total-count');
+            const currentCountPer = vci.querySelector('.current-count-per');
+            const ctr = vci.querySelectorAll('.codinglist-tb tbody tr');
+            const tdEnd = vci.querySelectorAll('.codinglist-tb td.end');
+            const tdIng = vci.querySelectorAll('.codinglist-tb td.ing');
+            currentCount.textContent = `${tdEnd.length}`;
+            totalCount.textContent = `${ctr.length}`;
+            currentCountPer.textContent = `${Math.floor((tdEnd.length / ctr.length) * 100)}`;
+          });
+        }
+      </script>
+    </div>
+  </body>
 </html>
