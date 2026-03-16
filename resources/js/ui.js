@@ -124,3 +124,145 @@ class DesignPopup {
     }
   }
 }
+
+
+
+/* modal */
+function designModal(option) {
+  const modalGroupCreate = document.createElement("div");
+  let domHtml = document.querySelector("html");
+  let design_popup_wrap_active = document.querySelectorAll(".popup_wrap.active");
+  let modal_wrap_parent = null;
+  let modal_item = null;
+  let pagewrap = document.querySelector(".page_wrap");
+  let showNum = 0;
+  let okTextNode = option.okText ?? "확인";
+  let cancelTextNode = option.cancelText ?? "취소";
+  let closeBtnDisplay = option.closeDisplay ?? true;
+  let submitBtnDisplay = option.submitDisplay ?? true;
+  modalGroupCreate.classList.add("modal_wrap_parent");
+
+  if (!modal_wrap_parent && !document.querySelector(".modal_wrap_parent")) {
+    pagewrap.append(modalGroupCreate);
+  } else {
+    modalGroupCreate.remove();
+  }
+  modal_wrap_parent = document.querySelector(".modal_wrap_parent");
+
+  let btnHTML = ``;
+
+  if (option.modaltype === "confirm") {
+    btnHTML = `
+    <a href="javascript:;" class="btn_quad btn_modal_submit cancelcall"><span class="text_node">${cancelTextNode}</span></a>
+    <a href="javascript:;" class="btn_quad btn_modal_submit primary okcall"><span class="text_node">${okTextNode}</span></a>
+    `;
+  } else {
+    btnHTML = `
+      <a href="javascript:;" class="btn_quad btn_modal_submit primary okcall"><span class="text_node">${okTextNode}</span></a>
+    `;
+  }
+
+  let modal_template = `
+    <div class="modal_wrap">
+        <div class="bg_dim"></div>
+        <div class="modal_box_tb">
+            <div class="modal_box_td">
+                <div class="modal_box_item">
+                    <div class="modal_box_message_row">
+                        <p class="modal_box_message">${option.message}</p>
+                    </div>
+                    <div class="btn_modal_submit_wrap btn_quad_wrap">
+                        ${btnHTML}
+                    </div>
+                    <a href="javascript:;" class="btn_modal_close"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+  `;
+  modal_wrap_parent.innerHTML = modal_template;
+  modal_item = modal_wrap_parent.querySelector(".modal_wrap");
+  modal_item.classList.add("active");
+  if (showNum) {
+    clearTimeout(showNum);
+  }
+  showNum = setTimeout(() => {
+    modal_item.classList.add("motion_end");
+    modal_item.addEventListener("transitionend", (e) => {
+      if (e.currentTarget.classList.contains("motion_end")) {
+        if (option.showCallback) {
+          option.showCallback();
+        }
+      }
+    });
+  }, 10);
+
+  let btn_modal_submit_wrap = modal_item.querySelector(".btn_modal_submit_wrap");
+  let btn_modal_submit = modal_item.querySelectorAll(".btn_modal_submit");
+  let btn_modal_close = modal_item.querySelectorAll(".btn_modal_close");
+  if (!submitBtnDisplay) {
+    modal_item.querySelector(".modal_box_item").classList.add("submit_not");
+  }
+  if (!!btn_modal_submit) {
+    btn_modal_submit.forEach((item) => {
+      let eventIs = false;
+
+      if (!submitBtnDisplay) {
+        item.remove();
+        btn_modal_submit_wrap.remove();
+      } else {
+        if (eventIs) {
+          item.removeEventListener("click");
+        }
+        item.addEventListener("click", (e) => {
+          let thisTarget = e.currentTarget;
+          closeAction();
+          if (thisTarget.classList.contains("okcall")) {
+            if (option.okcallback) {
+              option.okcallback();
+            }
+          } else if (thisTarget.classList.contains("cancelcall")) {
+            if (option.cancelcallback) {
+              option.cancelcallback();
+            }
+          }
+          eventIs = true;
+        });
+      }
+    });
+  }
+  if (!closeBtnDisplay) {
+    modal_item.querySelector(".modal_box_item").classList.add("close_not");
+  }
+  if (!!btn_modal_close) {
+    btn_modal_close.forEach((item) => {
+      let eventIs = false;
+      if (!closeBtnDisplay) {
+        item.remove();
+      } else {
+        if (eventIs) {
+          item.removeEventListener("click");
+        }
+        item.addEventListener("click", (e) => {
+          closeAction();
+          eventIs = true;
+        });
+      }
+    });
+  }
+
+  function closeAction() {
+    let actionNum = 0;
+    modal_item.classList.remove("motion_end");
+    if (design_popup_wrap_active.length === 0) {
+      domHtml.classList.remove("touchDis");
+    }
+    if (actionNum) {
+      clearTimeout(actionNum);
+    }
+    actionNum = setTimeout(() => {
+      modal_item.classList.remove("active");
+      modal_item.remove();
+    }, 500);
+  }
+}

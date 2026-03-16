@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./resources/css/style.css" rel="stylesheet" />
+    <script src="./resources/js/ui.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="page_wrap">
+      <div>
+        <a href="#" class="btn_guide_box" id="btnCall">모달 호출(alert)</a>
+        <a href="#" class="btn_guide_box" id="btnCall2">모달 호출(confirm)</a>
+      </div>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          // event
+          document.querySelector('#btnCall').addEventListener('click', () => {
+            designModal({
+              message: '<em>종료 임박</em> 상품입니다.',
+              modaltype: 'alert',
+              okcallback() {
+                console.log('okcallback');
+              },
+              cancelcallback() {
+                console.log('cancelcallback');
+              },
+            });
+          });
+          document.querySelector('#btnCall2').addEventListener('click', () => {
+            designModal({
+              message: '<em>종료 임박</em> 상품입니다.',
+              modaltype: 'confirm',
+              okcallback() {
+                console.log('okcallback');
+              },
+              cancelcallback() {
+                console.log('cancelcallback');
+              },
+            });
+          });
+        });
+      </script>
+    </div>
+  </body>
+</html>
