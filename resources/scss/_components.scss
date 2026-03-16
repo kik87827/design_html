@@ -1,4 +1,32 @@
 
+/* button */
+.btn_quad_wrap{display:flex; gap:24px;
+    &.respon_each_wrap{
+        justify-content: center;
+        .btn_quad{flex:0 0 293px;}
+    }
+}
+.btn_quad{
+    flex:1; text-align: center; box-sizing: border-box; display:flex; align-items: center; justify-content: center; min-height:50px; border:1px solid #2D1F13; padding:10px 10px;
+    &.big{min-height:70px;
+        .text_node{ font-size:20px; font-weight:600;}
+    }
+    &.size2{min-height:44px;
+        .text_node{ font-size:14px; font-weight:500;}
+    }
+    &.primary{
+        background:#2D1F13;color:#fff;
+        .text_node{color:#fff;}
+    }
+    &.theme_2{
+        background:#DD8560;color:#fff;border-color:#DD8560;
+        .text_node{color:#fff;}
+    }
+    .text_node{display:inline-block; font-size:16px; font-weight:500; line-height:1;
+        .count{font-weight:700;}
+    }
+}
+
 /* popup */
 .btn_guide_box{display:inline-block;padding:10px 20px; border:1px solid #ddd; color:#000;font-size:16px;}
 .bg_dim {display: block;width: 100%;height: 100%;position: fixed;top: 0; left: 0; z-index: 0;background: #333; opacity: 0; transition: 0.5s opacity;

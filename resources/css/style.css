@@ -344,6 +344,68 @@ img.ico_img {
   src: url("./font/montserrat-bold-webfont.eot?#iefix") format("embedded-opentype"), url("./font/montserrat-bold-webfont.woff2") format("woff2"), url("./font/montserrat-bold-webfont.woff") format("woff"), url("./font/montserrat-bold-webfont.ttf") format("truetype");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
+/* button */
+.btn_quad_wrap {
+  display: flex;
+  gap: 24px;
+}
+.btn_quad_wrap.respon_each_wrap {
+  justify-content: center;
+}
+.btn_quad_wrap.respon_each_wrap .btn_quad {
+  flex: 0 0 293px;
+}
+
+.btn_quad {
+  flex: 1;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  border: 1px solid #2D1F13;
+  padding: 10px 10px;
+}
+.btn_quad.big {
+  min-height: 70px;
+}
+.btn_quad.big .text_node {
+  font-size: 20px;
+  font-weight: 600;
+}
+.btn_quad.size2 {
+  min-height: 44px;
+}
+.btn_quad.size2 .text_node {
+  font-size: 14px;
+  font-weight: 500;
+}
+.btn_quad.primary {
+  background: #2D1F13;
+  color: #fff;
+}
+.btn_quad.primary .text_node {
+  color: #fff;
+}
+.btn_quad.theme_2 {
+  background: #DD8560;
+  color: #fff;
+  border-color: #DD8560;
+}
+.btn_quad.theme_2 .text_node {
+  color: #fff;
+}
+.btn_quad .text_node {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+}
+.btn_quad .text_node .count {
+  font-weight: 700;
+}
+
 /* popup */
 .btn_guide_box {
   display: inline-block;
