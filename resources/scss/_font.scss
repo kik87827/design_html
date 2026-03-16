@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('./font/NotoSans-Bold.eot');
+  src:
+    url('./font/NotoSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('./font/NotoSans-Bold.woff2') format('woff2'),
+    url('./font/NotoSans-Bold.woff') format('woff'),
+    url('./font/NotoSans-Bold.ttf') format('truetype'),
+    url('./font/NotoSans-Bold.svg#NotoSans-Bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('./font/NotoSans-Regular.eot');
+  src:
+    url('./font/NotoSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('./font/NotoSans-Regular.woff2') format('woff2'),
+    url('./font/NotoSans-Regular.woff') format('woff'),
+    url('./font/NotoSans-Regular.ttf') format('truetype'),
+    url('./font/NotoSans-Regular.svg#NotoSans-Regular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('./font/NotoSans-Thin.eot');
+  src:
+    url('./font/NotoSans-Thin.eot?#iefix') format('embedded-opentype'),
+    url('./font/NotoSans-Thin.woff2') format('woff2'),
+    url('./font/NotoSans-Thin.woff') format('woff'),
+    url('./font/NotoSans-Thin.ttf') format('truetype'),
+    url('./font/NotoSans-Thin.svg#NotoSans-Thin') format('svg');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('./font/NotoSans-Black.eot');
+  src:
+    url('./font/NotoSans-Black.eot?#iefix') format('embedded-opentype'),
+    url('./font/NotoSans-Black.woff2') format('woff2'),
+    url('./font/NotoSans-Black.woff') format('woff'),
+    url('./font/NotoSans-Black.ttf') format('truetype'),
+    url('./font/NotoSans-Black.svg#NotoSans-Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('./font/NotoSans-Light.eot');
+  src:
+    url('./font/NotoSans-Light.eot?#iefix') format('embedded-opentype'),
+    url('./font/NotoSans-Light.woff2') format('woff2'),
+    url('./font/NotoSans-Light.woff') format('woff'),
+    url('./font/NotoSans-Light.ttf') format('truetype'),
+    url('./font/NotoSans-Light.svg#NotoSans-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('./font/NotoSans-DemiLight.eot');
+  src:
+    url('./font/NotoSans-DemiLight.eot?#iefix') format('embedded-opentype'),
+    url('./font/NotoSans-DemiLight.woff2') format('woff2'),
+    url('./font/NotoSans-DemiLight.woff') format('woff'),
+    url('./font/NotoSans-DemiLight.ttf') format('truetype'),
+    url('./font/NotoSans-DemiLight.svg#NotoSans-Light') format('svg');
+  font-weight: 350;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('./font/NotoSans-Medium.eot');
+  src:
+    url('./font/NotoSans-Medium.eot?#iefix') format('embedded-opentype'),
+    url('./font/NotoSans-Medium.woff2') format('woff2'),
+    url('./font/NotoSans-Medium.woff') format('woff'),
+    url('./font/NotoSans-Medium.ttf') format('truetype'),
+    url('./font/NotoSans-Medium.svg#NotoSans-Light') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./font/montserrat-regular-webfont.eot');
+  src:
+    url('./font/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('./font/montserrat-regular-webfont.woff2') format('woff2'),
+    url('./font/montserrat-regular-webfont.woff') format('woff'),
+    url('./font/montserrat-regular-webfont.ttf') format('truetype');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./font/montserrat-bold-webfont.eot');
+  src:
+    url('./font/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('./font/montserrat-bold-webfont.woff2') format('woff2'),
+    url('./font/montserrat-bold-webfont.woff') format('woff'),
+    url('./font/montserrat-bold-webfont.ttf') format('truetype');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
