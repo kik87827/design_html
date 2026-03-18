@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./resources/css/style.css" rel="stylesheet" />
+    <script src="./resources/js/dynamicListener.min.js"></script>
+    <script src="./resources/js/ui.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="page_wrap">
+      <!-- combo -->
+      <div class="combo_item" id="combo_line">
+        <a href="javascript:;" class="combo_target"> 프리미엄 골드 (2025-04-29~2025-05-24) [*DB생명 직영 통합센터 TMR 모집*] </a>
+        <div class="combo_option_group">
+          <div class="combo_option_scroll">
+            <ul class="combo_option_list">
+              <li><a href="javascript:;" data-value="option_0" class="combo_option">프리미엄 골드_1</a></li>
+              <li><a href="javascript:;" data-value="option_1" class="combo_option">프리미엄 골드_2</a></li>
+              <li><a href="javascript:;" data-value="option_2" class="combo_option">프리미엄 골드_3</a></li>
+              <li><a href="javascript:;" data-value="option_3" class="combo_option">프리미엄 골드_4</a></li>
+              <li><a href="javascript:;" data-value="option_4" class="combo_option">프리미엄 골드_5</a></li>
+              <li><a href="javascript:;" data-value="option_5" class="combo_option">프리미엄 골드_6</a></li>
+              <li><a href="javascript:;" data-value="option_6" class="combo_option">프리미엄 골드_7</a></li>
+              <li><a href="javascript:;" data-value="option_7" class="combo_option">프리미엄 골드_8</a></li>
+              <li><a href="javascript:;" data-value="option_8" class="combo_option">프리미엄 골드_9</a></li>
+              <li><a href="javascript:;" data-value="option_9" class="combo_option">프리미엄 골드_10</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="combo_item" id="combo_line2">
+        <a href="javascript:;" class="combo_target" style="min-width: 200px">프리미엄2</a>
+        <div class="combo_option_group">
+          <div class="combo_option_scroll">
+            <ul class="combo_option_list">
+              <li><a href="javascript:;" data-value="option_0" class="combo_option">프리미엄 골드_1</a></li>
+              <li><a href="javascript:;" data-value="option_12" class="combo_option">프리미엄 골드_2</a></li>
+              <li><a href="javascript:;" data-value="option_2" class="combo_option">프리미엄 골드_3</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- // combo -->
+      <script>
+        // combobox
+        comboFunc();
+
+        // combobox callback
+        comboChangeCallback({
+          target: 'combo_line',
+          callback(value) {
+            console.log(value);
+          },
+        });
+        comboChangeCallback({
+          target: 'combo_line2',
+          callback(value) {
+            console.log(value);
+          },
+        });
+      </script>
+    </div>
+  </body>
+</html>
